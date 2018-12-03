@@ -1,0 +1,65 @@
+// For some reason, this import stopped working :(
+// @import "../../node_modules/normalize-scss/sass/normalize/import-now";
+@import "variables";
+@import "header";
+@import "menuView";
+@import "inputRange";
+@import "orderView";
+@import "confirmation";
+@import "login";
+@import "manager";
+
+body {
+  background: $primary-background;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button, input {
+  outline: none;
+}
+
+button {
+  background: darken($primary-color, 5%);
+  border: none;
+  color: #fff;
+  &:hover {
+    background: darken($primary-color, 10%);
+  }
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+
+main {
+  padding: 0;
+}
+
+footer {
+  padding: 20px 40px;
+  color: #fff;
+  background: lighten($primary-background, 5%);
+  p {
+    // margin-bottom: 0;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: lighter;
+}
+
+
+// .hidden {
+//   display: none;
+// }
